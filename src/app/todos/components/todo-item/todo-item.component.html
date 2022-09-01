@@ -6,7 +6,7 @@
   <div class="view">
     <input class="toggle" type="checkbox" [formControl]="chkCompletado" />
     <label (dblclick)="editar()">{{todo.text}}</label>
-    <button class="destroy"></button>
+    <button (click)="borrar()" class="destroy"></button>
   </div>
 
   <input 
