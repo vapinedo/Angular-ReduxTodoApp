@@ -4,7 +4,7 @@ import { filtrosValidos, setFiltro } from "./filtro.actions";
 export const initialState: filtrosValidos = "todos";
 
 const _filtroReducer = createReducer(initialState,
-    on(setFiltro, (state, { filtro }) => filtro),
+    on(setFiltro, (state, { filtro }) => state),
 );
 
 export function filtroReducer(state: any, action: any) {
